@@ -1,0 +1,204 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+h1 {
+  font-weight: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/20px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+b,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+}
+body {
+  background: #f9f9f9;
+}
+header {
+  height: 0.94rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.37rem;
+  background-color: #FA3432;
+}
+header a {
+  color: #fff;
+}
+section {
+  padding-left: 0.3rem;
+  padding-right: 0.37rem;
+  padding-top: 0.15rem;
+  background: #f9f9f9;
+}
+section ul li {
+  padding-bottom: 0.35rem;
+}
+section ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.25rem;
+  height: 0.58rem;
+  line-height: 0.58rem;
+  color: #4c4b4b;
+}
+section ul li a b {
+  display: flex;
+}
+section ul li a b i {
+  width: 0.58rem;
+  height: 0.58rem;
+  line-height: 0.58rem;
+  text-align: center;
+  border-radius: 0.15rem;
+  margin-right: 0.21rem;
+  background: #FA9A33;
+}
+section ul li a span {
+  font-size: 0.3rem;
+}
+.service {
+  height: 1.28rem;
+  padding-left: 0.31rem;
+  padding-top: 0.25rem;
+  background-color: #FFFDEF;
+  display: flex;
+}
+.service i {
+  width: 0.78rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.28rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #22CFD8;
+}
+.service div {
+  margin-left: 0.29rem;
+}
+.service div p {
+  font-size: 0.28rem;
+}
+.service div p span {
+  color: #06A2CE;
+}
+.service div b {
+  font-size: 0.18rem;
+  color: #969595;
+}
+footer {
+  height: 1.2rem;
+  margin-top: 0.23rem;
+  padding-top: 0.45rem;
+}
+footer p {
+  text-align: center;
+  font-size: 0.28rem;
+  color: #494848;
+}
+footer .fang {
+  font-size: 0.26rem;
+  margin-top: 0.23rem;
+  color: #9a9b9c;
+}

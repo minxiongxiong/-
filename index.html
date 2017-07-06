@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>招财猫</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<body>
+	<div class="header">
+		<h1><a href="">招财猫理财</a></h1>
+		<div>
+			<a href="">注册</a> |
+			<a href="">登录</a>
+		</div>
+	</div>
+	<ul class="nav">
+		<li class="cur"><a href="">首页</a></li>
+		<li><a href="">我要投资</a></li>
+		<li><a href="">账户中心</a></li>
+	</ul>
+	
+	<div id='slider' class='swipe'>
+	  <div class='swipe-wrap'>
+	    <div><img src="img/slider1.jpg"/></div>
+	    <div><img src="img/slider2.jpg"/></div>
+	  </div>
+	  
+	  <ul class="indirector">
+	  	<li class="current"></li>
+	  	<li></li>
+	  </ul>
+	</div>
+	<ul class="our-nav">
+		<li><a href=""><i class="iconfont icon-suo"></i>安全保障</a></li>
+		<li><a href=""><i class="iconfont icon-jiaruwomen"></i>关于我们</a></li>
+		<li><a href=""><i class="iconfont icon-xinshouzhiyin"></i>新手指引</a></li>
+		<li><a href="help.html"><i class="iconfont icon-wenti"></i>帮助中心</a></li>
+	</ul>
+	<div class="main1">
+		<div class="main1-header">
+			<h2><i class="iconfont icon-weibiaoti--"></i>热门产品</h2>
+			<p><a href="">更多</a></p>
+		</div>
+		<ul>
+			<li>
+				<h4>
+					<span><a href="xiangq.html">盈信计划2467号1期</a></span>
+					<b>返现金</b>
+					<i class="iconfont icon-vip"></i>
+				</h4> 
+				<div class="data">
+					<div class="data1">9.2%<span>+0.5%</span></div>
+					<div class="data2">
+						<p>180<i>天</i></p>
+						<span>投资期限</span>
+					</div>
+					<div class="data3">
+						<img src="img/62.png" alt="" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<h4>
+					<span>助企计划2365号9期</span>
+					<b>返现金</b>
+					<i class="iconfont icon-vip"></i>
+				</h4> 
+				<div class="data">
+					<div class="data1">11%<span>+0.5%</span></div>
+					<div class="data2">
+						<p>365<i>天</i></p>
+						<span>投资期限</span>
+					</div>
+					<div class="data3">
+						<img src="img/62.png" alt="" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<h4>
+					<span>盈信计划2268号2期</span>
+					<b>返现金</b>
+					<i class="iconfont icon-vip"></i>
+				</h4> 
+				<div class="data">
+					<div class="data1">10.5%<span>+0.5%</span></div>
+					<div class="data2">
+						<p>300<i>天</i></p>
+						<span>投资期限</span>
+					</div>
+					<!--<img src="img/62.png"/>-->
+					<div class="data3">
+						<img src="img/62.png" alt="" />
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</div >
+	<div class="main2">
+		<div class="main2-header">
+			<h2><i class="iconfont icon-artboard13"></i>企业动态</h2>
+		</div>
+		<ul>
+			<li>
+				<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				<div>
+					<h4><a href="">春日梦想  植树专享</a></h4>
+					<p><b>来源:招财猫理财</b><span>2017-6-15</span></p>
+				</div>
+			</li>
+			<li>
+				<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				<div>
+					<h4><a href="">全民植树  热爱生活</a></h4>
+					<p><b>来源:招财猫理财</b><span>2017-6-15</span></p>
+				</div>
+			</li>
+			<li>
+				<img src="img/news20170309133946_工资日标题.jpg" alt="" />
+				<div>
+					<h4><a href="">每月工资日  理财自加薪</a></h4>
+					<p><b>来源:招财猫理财</b><span>2017-6-15</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">	
+		<p >
+			<a>触屏版</a> | <a>电脑版</a> | <a>APP下载</a>			
+		</p>
+		<p class="fang">&copy;2017招财猫理财 浙ICP备14041616</p>
+	</div>
+	
+	<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swipe/event.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	$(function(){
+		
+	
+		window.mySwipe = Swipe(document.getElementById('slider'),{
+//			auto:2000,
+			continuous :true,
+			callback:function(index,ele){
+				console.info(index,ele);
+				
+				$(".indirector li").removeClass("current").eq(index%2).addClass("current");
+			}
+		});
+		
+		var newWidth = document.documentElement.offsetWidth;
+		var new_width = newWidth/750*100 + "px";
+		console.log( document.documentElement.offsetWidth );
+		$("html").css('font-size',new_width);
+	})
+	</script>
+</body>
+</html>
